@@ -18,6 +18,12 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  display: flex; /* Flexbox 설정 */
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  height: 100vh; /* 전체 화면 높이 사용 */
+  overflow: hidden; /* 잘림 방지 */
+  flex-direction: column;
 }
 
 @layer utilities {
@@ -29,10 +35,15 @@ body {
 .weatherT{
   text-align: center;
   font-size: xxx-large;
-  font-weight: 400;
-  transform: translateY(-117px);
+  font-weight: 500;
+  transform: translateY(-418px);
 }
-
+.date{
+  text-align: center;
+  font-size: 23px;
+  font-weight: 400;
+  transform: translateY(-389px);
+}
 .container{
   content: '';
   position: absolute;
@@ -43,74 +54,118 @@ body {
   width: 600px;
   border: 2px solid #b0c4de;
   background-color: #fff;
-  border-radius: 3rem;
+  border-radius: 3px 3px 60px 60px;
   margin: 0 auto;
-  transform: translateY(-180px);
+  border-top: none;
+  transform: translateY(-104px);
 }
+
 
 .search{
   position: absolute;
-  left: 701px;
+  left: -808px;
   right: 0;
   bottom: 0;
-  height: 47px;
-  width: 217px;
+  height: 58px;
+  width: 600px;
   border: 2px solid #d5dff5;
-  border-radius: 1rem;
+  border-radius: 10px 10px 3px 3px;
   margin: 0 auto;
-  transform: translateY(-857px);
+  padding: 7px 27px;
+  font-size: 22px;
+  border-bottom: none;
+  transform: translateY(-483px);
 }
 .buttonSub{
   position: absolute;
-  left: 872px;
+  left: -314px;
   right: 0;
   padding: 3px 10px;
   height: 45px;
   width: 45px;
   margin: 0 auto;
-  font-size: 22px;
-  transform: translateY(-904px);
+  font-size: 26px;
+  transform: translateY(-531px);
 }
 .sub{
   position: absolute;
-  left: 608px;
-  transform: translateY(410px);
+  left: 702px;
+  transform: translateY(364px);
 }
 .locImg{
   position: absolute;
-  left: 140px;
-  transform: translateY(21px);
+  left: 150px;
+  transform: translateY(47px);
 }
 .location{
   text-align: center;
   font-size: xx-large;
   font-weight: 400;
-  transform: translateY(22px);
+  transform: translateY(50px);
 }
 .imgW{
   position: absolute;
-  height: 450px;
-  width: 450px;
-  left: 36px;
+  height: 400px;
+  width: 400px;
+  left: 69px;
   text-align: center;
   margin: 1px;
-  transform: translateY(-13px);
+  transform: translateY(-78px);
+  z-index: 2;
+}
+.box{
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  left: 69px;
+  text-align: center;
+  margin: 1px;
+  transform: translateY(-47px);
+  z-index: 1;
 }
 .temper{
   position: absolute;
   font-size: 88px;
-  font-weight: 300;
-  transform: translateY(235px);
+  font-weight: 350;
+  transform: translateY(224px);
   width: 207px;
-  left: 311px;
-  z-index: 2;
+  left: 309px;
+  z-index: 3;
 }
 .weather{
   position: absolute;
   text-align: center;
-  font-size: 50px;
-  font-weight: 300;
-  transform: translateY(427px);
-  width: 390px;
-  left: 94px;
+  width: 596px;
+  height: 72px;
+  font-size: xxx-large;
+  font-weight: 350;
+  transform: translateY(387px);
+}
+.box2{
+  text-align: center;
+  transform: translateY(387px);
+  height: 73px;
+}
+.humidity{
+  position: absolute;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 350;
+  transform: translateY(447px);
+  width: 186px;
+  left: 72px;
+}
+.windSpeed{
+  position: absolute;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 350;
+  transform: translateY(447px);
+  width: 286px;
+  left: 253px;
+}
+.dotImg{
+  position: absolute;
+  transform: translateY(457px);
+  left: 242px;
 }
