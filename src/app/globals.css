@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #e7f4fd;
   --foreground: #171717;
 }
 
@@ -24,4 +24,93 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.weatherT{
+  text-align: center;
+  font-size: xxx-large;
+  font-weight: 400;
+  transform: translateY(-117px);
+}
+
+.container{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 703px;
+  width: 600px;
+  border: 2px solid #b0c4de;
+  background-color: #fff;
+  border-radius: 3rem;
+  margin: 0 auto;
+  transform: translateY(-180px);
+}
+
+.search{
+  position: absolute;
+  left: 701px;
+  right: 0;
+  bottom: 0;
+  height: 47px;
+  width: 217px;
+  border: 2px solid #d5dff5;
+  border-radius: 1rem;
+  margin: 0 auto;
+  transform: translateY(-857px);
+}
+.buttonSub{
+  position: absolute;
+  left: 872px;
+  right: 0;
+  padding: 3px 10px;
+  height: 45px;
+  width: 45px;
+  margin: 0 auto;
+  font-size: 22px;
+  transform: translateY(-904px);
+}
+.sub{
+  position: absolute;
+  left: 608px;
+  transform: translateY(410px);
+}
+.locImg{
+  position: absolute;
+  left: 140px;
+  transform: translateY(21px);
+}
+.location{
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 400;
+  transform: translateY(22px);
+}
+.imgW{
+  position: absolute;
+  height: 450px;
+  width: 450px;
+  left: 36px;
+  text-align: center;
+  margin: 1px;
+  transform: translateY(-13px);
+}
+.temper{
+  position: absolute;
+  font-size: 88px;
+  font-weight: 300;
+  transform: translateY(235px);
+  width: 207px;
+  left: 311px;
+  z-index: 2;
+}
+.weather{
+  position: absolute;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 300;
+  transform: translateY(427px);
+  width: 390px;
+  left: 94px;
 }
